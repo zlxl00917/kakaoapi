@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="map" style="width: 500px; height: 400px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey="></script> 
+    <script>
+        var container = document.getElementById('map'); // (Node)지도가 표시될 HTML element
+		var options = { //(object)
+			center: new kakao.maps.LatLng(37.544575, 127.037442),// 지도의 중심좌표 LatLng(latitude,longitude)
+			level: 3// 확대 수준
+		};
+        // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+        var map = new kakao.maps.Map(container, options);
+        //Q.new라는 건 앞에 생성한 객체를 다시 생성할때 쓰는 건데. kakao.maps가 이전에 언제 정의된거지? 그 데이터는 어디에 있는거징?
+    </script>
+</body>
+</html>
